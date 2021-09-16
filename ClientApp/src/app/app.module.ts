@@ -11,7 +11,9 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
+
 @NgModule({
+  
   declarations: [
     AppComponent,
     NavMenuComponent,
@@ -23,6 +25,7 @@ import { HeroesComponent } from './heroes/heroes.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
+    BrowserModule,
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
